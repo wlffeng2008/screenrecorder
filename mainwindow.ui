@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt屏幕录制工具</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <widget class="QLabel" name="timeLabel">
+     <property name="font">
+      <font>
+       <pointsize>24</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="text">
+      <string>00:00:00</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="statusLabel">
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="text">
+      <string>就绪</string>
+     </property>
+    </widget>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <widget class="QPushButton" name="startButton">
+      <property name="text">
+       <string>开始录制</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pauseButton">
+      <property name="text">
+       <string>暂停</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stopButton">
+      <property name="text">
+       <string>停止录制</string>
+      </property>
+     </widget>
+    </layout>
+   </layout>
+  </widget>
+  <action name="actionStart">
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </action>
+  <addaction name="actionStart"/>
+  <addaction name="actionPause"/>
+  <addaction name="actionStop"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
